@@ -8,5 +8,5 @@ class UsuarioSerializer(serializers.ModelSerializer):
 
 class JogoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Usuario
+        model = Jogo
         fields = "__all__"
