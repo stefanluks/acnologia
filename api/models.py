@@ -25,6 +25,10 @@ class Jogo(models.Model):
 
 
 class Seguidor(models.Model):
+    class Meta:
+        verbose_name = "Seguidor"
+        verbose_name_plural = "Seguidores"
+        
     usuario = models.ForeignKey(Usuario, related_name="quem_segue", on_delete=models.CASCADE)
     segue = models.ForeignKey(Usuario, related_name="sendo_seguido", on_delete=models.CASCADE)
 
